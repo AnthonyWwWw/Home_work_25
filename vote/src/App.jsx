@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { getImageUrl } from "./util.js";
+import { getImageUrl } from "./js/utility.js";
 import Smail from "./components/Smail.jsx";
 import Button from "./components/Button.jsx";
 import Voting from "./components/Voting.jsx";
