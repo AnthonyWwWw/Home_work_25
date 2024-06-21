@@ -1,0 +1,115 @@
+@import './null.scss';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+
+/////////////////////////////////////////////////////
+///import                                         ///
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+///variables
+$fontFamaliMontserrat: "Montserrat", sans-serif;
+///end-variables
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+///global
+*{
+    font-family: $fontFamaliMontserrat;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.smail_content img{
+    width: 100px;
+    height: 100px;
+    transition: all 1s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 50;
+
+    &:hover{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+///end-global
+/////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////
+///BODY
+
+body{
+    background-color: #1D1340;
+}
+
+.root-conteiner{
+    background-color: #F2F2F2;
+    width: 1200px;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    min-height: 500px;
+    height: 50%;
+}
+
+.list-smail{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.smail_content{
+    position: relative;
+    display: flex;
+    align-items: end;
+    width: 150px;
+    height: 180px;
+    color: #223440;
+    font-size: 30px;
+    font-weight: 700;
+
+    span{
+        z-index: 100;
+    }
+}
+
+.voting-results{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.voting-results_content{
+    align-content: center;
+    position: relative;
+
+    p{
+        display: block;
+    }
+
+    span{
+        display: block;
+        width: 100%;
+    }
+
+    img{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-65%);
+    }
+}
+///END_BODY                                     
+////////////////////////////////////////////////////
