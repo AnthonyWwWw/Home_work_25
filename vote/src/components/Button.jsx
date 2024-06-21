@@ -7,10 +7,6 @@ class Button extends Component{
         this.showResult = this.showResult.bind(this);
     }
 
-    showResult(){
-        console.log('1');
-    }
-
     render(){
 
         return(
