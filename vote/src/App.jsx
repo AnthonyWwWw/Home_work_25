@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   showResult() {
-    const collectionEmoticons = ['angry-wer.png', 'angry.png', 'smile.png', 'thinking.png', 'tongue.png'];
+    const collectionEmoticons = ["angry-wer.png", "angry.png", "smile.png", "thinking.png", "tongue.png"];
     const votes = collectionEmoticons.map(smailURL => {
       const src = getImageUrl(smailURL);
       return { smailURL, src, votes: JSON.parse(localStorage.getItem(`votes_${src}`)) || 0 };
@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   render() {
-    const collectionEmoticons = ['angry-wer.png', 'angry.png', 'smile.png', 'thinking.png', 'tongue.png'];
+    const collectionEmoticons = ["angry-wer.png", "angry.png", "smile.png", "thinking.png", "tongue.png"];
     const imageUrls = collectionEmoticons.map(getImageUrl);
     const { mostVoted } = this.state;
 
