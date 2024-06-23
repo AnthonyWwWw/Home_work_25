@@ -3,8 +3,6 @@ import { Component } from "react";
 class Button extends Component{
     constructor(props){
         super(props)
-
-        this.showResult = this.showResult.bind(this);
     }
 
     render(){
